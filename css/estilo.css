@@ -1,0 +1,63 @@
+/* Barra de Navegação*/
+
+.navbar {
+    background-color: #3e1648;
+}
+
+.navbar-brand {
+    font-size: 30px;
+}
+
+.nav-link {
+    color: #a978a5 ;
+    padding: 15px 15px;
+    margin-right: 5px ;
+}
+
+/* Home */
+
+.btn {
+    background-color: #3e1648;
+    color: white;
+    border: 1px solid white;
+}
+
+#home {
+    color: #3e1648;
+}
+
+#home img {
+    width: 404px;
+    height:500px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+#pc {
+    color: #3e1648;
+}
+
+#pc img {
+    width: 404px;
+    height:500px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+#produtos {
+    background-color: #3e1648;
+    color: #3e1648;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.card {
+    margin: 0 0 0 0;
+    width: 90%;
+}
+
+footer {
+    background-color: #3e1648;
+    color: white;
+}
