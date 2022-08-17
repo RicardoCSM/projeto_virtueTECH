@@ -6,7 +6,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/88df19f8f8.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
 
     <body>
@@ -22,9 +22,9 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarPrincipal">
                     <ul class="navbar-nav">
                         <li class="nav-item ">
-                            <a class="nav-link active" href="">Home</a>
+                            <a class="nav-link" href="index.php">Home</a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown active">
                             <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" id="navbarProdutos">Produtos</a>
                             <ul class="dropdown-menu">
                                 <li><a href="" class="dropdown-item">Smartphones</a></li>
@@ -57,8 +57,54 @@
             </div>
         </nav>
 
+        <section id="display">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 d-flex justify-content-center">
+                        <h1 class="display-4 ">Todos Produtos</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
         
-        
+        <section id="produtos">
+            <div class="container">
+
+                <div class="d-flex produto">
+                        <div class="produto-imagem">
+                            <img src="https://casaevideodigital.vtexassets.com/arquivos/ids/424323/Console-XBOX-Series-S-500GB-Microsoft-Branco-1705326b.jpg?v=637716257694770000" alt="">
+                        </div>
+                        <div>
+                            <h1>Xbox series S</h1>
+                            <p>Console Microsoft Xbox Series S, 512GB, Branco - RRS-00006</p>
+                            <h2>R$1.999,90</h2>
+                        </div>
+                        <div>
+                            <button class="btn btn-lg">
+                                Comprar
+                            </button>
+                        </div>
+                </div>
+
+                <div class="d-flex produto">
+                        <div class="produto-imagem">
+                            <img src="https://http2.mlstatic.com/D_NQ_NP_843694-MLA49654654831_042022-O.jpg" alt="">
+                        </div>
+                        <div>
+                            <h1>Redmi Note 11</h1>
+                            <p>Smartphone Xiaomi Redmi Note 11 Azul Tela de 6,43", 128GB, 4GB de RAM, Câmera Traseira Quádrupla, Android 11 e Processador Snapdragon 680</p>
+                            <h2>R$1.999,90</h2>
+                        </div>
+                        <div>
+                            <button class="btn btn-lg">
+                                Comprar
+                            </button>
+                        </div>
+                </div>
+            
+            </div>
+        </section>
+
         <footer class="pt-4 pb-3">
             <div class="container">
                 <div class="row d-flex align-items-center ">

@@ -84,7 +84,7 @@
             </div>
         </section><!-- Fim Seção Home -->
 
-        <section id="produtos"><!-- Inicio Seção Produtos -->
+        <section id="produtos_card"><!-- Inicio Seção Produtos -->
             <div class="container">
                 <div class="row">
 
