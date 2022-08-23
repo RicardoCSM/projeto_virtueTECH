@@ -6,7 +6,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/88df19f8f8.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
 
     <body>
@@ -27,10 +27,10 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" id="navbarProdutos">Produtos</a>
                             <ul class="dropdown-menu">
-                                <li><a href="" class="dropdown-item">Smartphones</a></li>
-                                <li><a href="" class="dropdown-item">Acessórios</a></li>
-                                <li><a href="" class="dropdown-item">Consoles</a></li>
-                                <li><a href="" class="dropdown-item">Pc e periféricos</a></li>
+                                <li><a href="smartphones.php" class="dropdown-item">Smartphones</a></li>
+                                <li><a href="acessorios.php" class="dropdown-item">Acessórios</a></li>
+                                <li><a href="consoles.php" class="dropdown-item">Consoles</a></li>
+                                <li><a href="pc.php" class="dropdown-item">Pc e periféricos</a></li>
                                 <li><a href="todos_produtos.php" class="dropdown-item">Todos os produtos</a></li>
 
                             </ul>
@@ -94,7 +94,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Smartphones</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn ">Comprar</a>
+                            <a href="smartphones.php" class="btn ">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -105,7 +105,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Acessórios</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn ">Comprar</a>
+                            <a href="acessorios.php" class="btn ">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -116,7 +116,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Consoles</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn">Comprar</a>
+                            <a href="consoles.php" class="btn">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -142,9 +142,7 @@
                     Você pode escolher o computador ideal na Virtue TECH, que conta com uma ampla variedade de produtos com os melhores preços: computador gamer, computador de mesa, além de monitores para dar um up em seu setup.
                     </p>
 
-                    <button class="btn btn-lg mt-2">
-                        Comprar
-                    </button>
+                    <a class="btn btn-lg mt-2" href="pc.php">Comprar</a> 
 
                     </div>
                 </div>

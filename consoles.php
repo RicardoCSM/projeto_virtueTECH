@@ -1,6 +1,6 @@
 <?php 
 
-	$tipo = 'todosProdutos';
+	$tipo = '1';
     require 'produtos_controller.php';
 
 ?>
@@ -68,7 +68,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 d-flex justify-content-center">
-                        <h1 class="display-4 ">Todos Produtos</h1>
+                        <h1 class="display-4 ">Consoles</h1>
                     </div>
                 </div>
             </div>
