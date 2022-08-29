@@ -22,6 +22,15 @@ body {
     margin-right: 5px ;
 }
 
+.dropdown-item:active {
+    background-color: #3e1648;
+    color: white;
+}
+
+.dropdown-item:hover {
+    background-color: #fcddfa;
+}
+
 .btn {
     background-color: #3e1648;
     color: white;
@@ -126,4 +135,9 @@ footer {
     background-color: #3e1648;
     color: white;
     margin-top: auto;
+}
+
+#card_formularios i {
+    font-size: 70px;
+    color: #3e1648;
 }
