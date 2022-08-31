@@ -48,7 +48,7 @@
         public function __construct(Conexao $conexao,Produto $produto)
         {
             $this->conexao = $conexao->conectar();
-            $this->tarefa = $produto;
+            $this->produto = $produto;
         }
 
         public function recuperar() { //read
@@ -63,9 +63,21 @@
             return $stmt->fetchAll(PDO::FETCH_OBJ);
         }
 
+        public function adicionar() {
+            $query = 'insert into tb_produtos(tipo, nome, imagem, descricao, preco)values(:tipo, :nome, :imagem, :descricao, :preco)';
+            $stmt = $this->conexao->prepare($query);
+            $stmt->bindValue(':tipo', $this->produto->__get('tipo'));
+            $stmt->bindValue(':nome', $this->produto->__get('nome'));
+            $stmt->bindValue(':imagem', $this->produto->__get('imagem'));
+            $stmt->bindValue(':descricao', $this->produto->__get('descricao'));
+            $stmt->bindValue(':preco', $this->produto->__get('preco'));
+            
+            $stmt->execute();
+        }
+
         public function recuperarTipo($tipo) {
             $query = "
-                select 
+                select
                     *
                 from
                     tb_produtos as p

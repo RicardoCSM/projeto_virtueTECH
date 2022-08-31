@@ -71,11 +71,11 @@
                             
 
                                 <form action="cadastrar.php" method="POST">
-                                    <input name="nome" type="text" id="" class="form-control mt-4 mb-2" placeholder="Nome">
-                                    <input name="sobrenome" type="text" id="" class="form-control mb-2" placeholder="Sobrenome">
-                                    <input name="email" type="email" id="" class="form-control mb-2" placeholder="E-mail">
-                                    <input name="senha" type="password" id="" class="form-control mb-2" placeholder="Senha">
-                                    <input name="confirmar_senha" type="text" id="" class="form-control mb-2" placeholder="Confirmar senha">
+                                    <input name="nome" type="text" class="form-control mt-4 mb-2" placeholder="Nome">
+                                    <input name="sobrenome" type="text" class="form-control mb-2" placeholder="Sobrenome">
+                                    <input name="email" type="email" class="form-control mb-2" placeholder="E-mail">
+                                    <input name="senha" type="password" class="form-control mb-2" placeholder="Senha">
+                                    <input name="confirmar_senha" type="text" class="form-control mb-2" placeholder="Confirmar senha">
                                     
                                     <?php if(isset($_GET['cadastro']) && $_GET['cadastro'] == 'erro_cadastro'){?>
 
