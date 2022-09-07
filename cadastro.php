@@ -42,13 +42,13 @@
 
                     <ul class="navbar-nav nav-right">
                         <li class="nav-item ">
-                            <a class="nav-link" href="">
+                            <a class="nav-link" href="login.php">
                             <i class="fa-solid fa-user mr-1"></i>
                             Login
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="">
+                            <a class="nav-link" href="cadastro.php">
                             <i class="fa-solid fa-user-plus"></i>    
                             Cadastrar</a>
                         </li>

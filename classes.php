@@ -74,6 +74,27 @@
             
             $stmt->execute();
         }
+        
+        public function Editar() {
+                $query = "
+                    update
+                        tb_produtos
+                    set
+                        nome = ?,
+                        imagem = ?,
+                        descricao = ?,
+                        preco = ?
+                    where
+                        id = ?
+                ";
+                $stmt = $this->conexao->prepare($query);
+                $stmt->bindValue(1, $this->produto->__get('nome'));
+                $stmt->bindValue(2, $this->produto->__get('imagem'));
+                $stmt->bindValue(3, $this->produto->__get('descricao'));
+                $stmt->bindValue(4, $this->produto->__get('preco'));
+                $stmt->bindValue(5, $this->produto->__get('id'));
+                return $stmt->execute();
+        }
 
         public function recuperarTipo($tipo) {
             $query = "

@@ -12,7 +12,7 @@
     <body>
         <nav class="navbar navbar-expand-md navbar-dark">
             <div class="container d-flex justify-content-center">
-                <a class="navbar-brand text-center mb-0 h1" href="#">
+                <a class="navbar-brand text-center mb-0 h1" href="index.php">
                     <i class="fa-solid fa-tag d-inline-block align-center"></i>
                     VIRTUE TECH
                 </a>
@@ -39,7 +39,7 @@
                         <div class="card-body">
                             <i class="fa-solid fa-pen-to-square"></i>                        
                             <div>
-                                <a href="smartphones.php" class="btn">Editar</a>
+                                <a href="edicao.php" class="btn">Editar</a>
                             </div>
                         </div>
                     </div>
@@ -50,7 +50,7 @@
                         <div class="card-body">
                             <i class="fa-solid fa-circle-arrow-left"></i>
                             <div>
-                                <a href="smartphones.php" class="btn">Voltar</a>
+                                <a href="index.php" class="btn">Voltar</a>
                             </div>
                         </div>
                     </div>

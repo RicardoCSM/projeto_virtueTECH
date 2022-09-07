@@ -123,11 +123,20 @@ body {
     color: red;
 }
 
-#produtos .btn {
+#produtos i {
+    font-size: 25px;
+    color: #3e1648;
+}
+
+#produtos .btn-lg {
     margin-left: 50px;
     margin-top: 72px;
     padding: 15px;
     letter-spacing: 2px;
+    border: 1px solid #3e1648;
+}
+
+#produtos .btn-sm {
     border: 1px solid #3e1648;
 }
 
