@@ -1,7 +1,7 @@
 <?php 
 	$tipo = 'todosProdutos';
+    $id = '';
 	require 'produtos_controller.php';
-
 ?>
 
 <!DOCTYPE html>

@@ -56,3 +56,7 @@ function editar(id, nome, imagem, descricao, preco) {
     produto.insertBefore(form, produto[0])
 
 }
+
+function remover(id) {
+    location.href = 'edicao.php?remover='+id;
+}

@@ -63,6 +63,16 @@
             return $stmt->fetchAll(PDO::FETCH_OBJ);
         }
 
+        public function remover() { //read
+            $query = "
+                delete from tb_produtos where id = :id
+            ";
+            $stmt = $this->conexao->prepare($query);
+            $stmt->bindValue(':id', $this->produto->__get('id'));
+            $stmt->execute();
+        }
+
+
         public function adicionar() {
             $query = 'insert into tb_produtos(tipo, nome, imagem, descricao, preco)values(:tipo, :nome, :imagem, :descricao, :preco)';
             $stmt = $this->conexao->prepare($query);
