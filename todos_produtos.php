@@ -1,6 +1,7 @@
 <?php 
 
 	$tipo = 'todosProdutos';
+    $id = '';
     require 'produtos_controller.php';
 
 ?>
@@ -76,25 +77,27 @@
         
         <section id="produtos">
             <div class="container">
-
-            <?php foreach($produtos as $indice => $produto) {?>
-                <div class="d-flex produto">
-                        <div class="produto-imagem">
-                            <img src="<?= $produto->imagem ?>" alt="">
+                <div class="row">
+                    <?php foreach($produtos as $indice => $produto) {?>
+                        <div class="row mb-3 d-flex align-items-center ">
+                            <div class="col-sm-12 row align-items-center d-flex produto" id="produto_<?= $produto->id ?>">
+                                <div class="produto-imagem col-sm-4">
+                                    <img src="<?= $produto->imagem ?>" alt="">
+                                </div>
+                                <div class="col-sm-7">
+                                    <h1><?= $produto->nome ?></h1>
+                                    <p><?= $produto->descricao ?></p>
+                                    <h2><?= $produto->preco ?></h2>
+                                </div>
+                                <div class="col-sm-1">
+                                    <button class="btn btn-lg ">
+                                        Comprar
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <h1><?= $produto->nome ?></h1>
-                            <p><?= $produto->descricao ?></p>
-                            <h2><?= $produto->preco ?></h2>
-                        </div>
-                        <div>
-                            <button class="btn btn-lg">
-                                Comprar
-                            </button>
-                        </div>
+                    <?php } ?>
                 </div>
-            <?php } ?>
-            
             </div>
         </section>
 
@@ -107,16 +110,16 @@
                     </p>
                 </div>
                 <div class="col-md-4 d-flex justify-content-end align-itens-center">
-                    <a href="" class="btn btn-outline-dark ml-2">
+                    <a href="" class="btn btn-outline-dark ml-2 mr-2">
                     <i class="fab fa-facebook"></i>
                     </a>
-                    <a href="" class="btn btn-outline-dark ml-2">
+                    <a href="" class="btn btn-outline-dark ml-2 mr-2">
                     <i class="fab fa-twitter"></i>
                     </a>
-                    <a href="" class="btn btn-outline-dark ml-2">
+                    <a href="" class="btn btn-outline-dark ml-2 mr-2">
                     <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="" class="btn btn-outline-dark ml-2">
+                    <a href="" class="btn btn-outline-dark ml-2 mr-4">
                     <i class="fab fa-tiktok"></i>
                     </a>
                     <a href="" class="btn btn-outline-dark ml-2">

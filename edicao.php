@@ -50,11 +50,11 @@
 						<div class="col">
 							<?php foreach($produtos as $indice => $produto) {?>
 							<div class="row mb-3 d-flex align-items-center ">
-                                <div class="col-sm-10 row d-flex produto" id="produto_<?= $produto->id ?>">
+                                <div class="col-sm-10 row d-flex align-items-center produto" id="produto_<?= $produto->id ?>">
                                     <div class="produto-imagem col-sm-4">
                                         <img src="<?= $produto->imagem ?>" alt="">
                                     </div>
-                                    <div class="produto-imagem col-sm-6">
+                                    <div class="col-sm-6">
                                         <h1><?= $produto->nome ?></h1>
                                         <p><?= $produto->descricao ?></p>
                                     </div>

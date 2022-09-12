@@ -1,6 +1,7 @@
 <?php 
 
 	$tipo = '1';
+    $id = '';
     require 'produtos_controller.php';
 
 ?>
@@ -76,28 +77,30 @@
         
         <section id="produtos">
             <div class="container">
-
-            <?php foreach($produtos as $indice => $produto) {?>
-                <div class="d-flex produto">
-                        <div class="produto-imagem">
-                            <img src="<?= $produto->imagem ?>" alt="">
+                <div class="row">
+                    <?php foreach($produtos as $indice => $produto) {?>
+                        <div class="row mb-3 d-flex align-items-center ">
+                            <div class="col-sm-12 row align-items-center d-flex produto" id="produto_<?= $produto->id ?>">
+                                <div class="produto-imagem col-sm-4">
+                                    <img src="<?= $produto->imagem ?>" alt="">
+                                </div>
+                                <div class="col-sm-7">
+                                    <h1><?= $produto->nome ?></h1>
+                                    <p><?= $produto->descricao ?></p>
+                                    <h2><?= $produto->preco ?></h2>
+                                </div>
+                                <div class="col-sm-1">
+                                    <button class="btn btn-lg ">
+                                        Comprar
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <h1><?= $produto->nome ?></h1>
-                            <p><?= $produto->descricao ?></p>
-                            <h2><?= $produto->preco ?></h2>
-                        </div>
-                        <div>
-                            <button class="btn btn-lg">
-                                Comprar
-                            </button>
-                        </div>
+                    <?php } ?>
                 </div>
-            <?php } ?>
-            
             </div>
         </section>
-
+        
         <footer class="pt-4 pb-3">
             <div class="container">
                 <div class="row d-flex align-items-center ">

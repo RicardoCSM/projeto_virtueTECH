@@ -1,6 +1,7 @@
 <?php 
 
 	$tipo = '3';
+    $id = '';
     require 'produtos_controller.php';
 
 ?>
